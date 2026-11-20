@@ -53,6 +53,7 @@ public class CustomizablePlatformerMovement : MonoBehaviour
         //---Handle vertical velocity---
         
         isGrounded = IsGrounded();
+        animator.SetBool("IsGrounded", isGrounded);
         ApplyGravity();
         
         // Apply jump-input:
@@ -86,6 +87,7 @@ public class CustomizablePlatformerMovement : MonoBehaviour
         
         //---Handle horizontal velocity---
         velocity.x = moveInput.x * maxSpeed;
+        animator.SetBool("IsWalking", Mathf.Abs(velocity.x) > 0.1f);
         
         // Write movement animation code here. (Suggestion: send your current velocity into the Animator for both the x- and y-axis.)
         // animator.SetFloat("HorizontalMovement", moveInput.x)
