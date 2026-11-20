@@ -19,6 +19,7 @@ public class CustomizablePlatformerMovement : MonoBehaviour
 {
     [SerializeField] private float maxSpeed = 10f;
     [SerializeField] private float jumpForce = 10f;
+    [SerializeField] private float bounceForce = 2f;
     
     
     // Physics and collision
@@ -175,5 +176,10 @@ public class CustomizablePlatformerMovement : MonoBehaviour
             jumpReleased = true;
             jumpInput = false;
         }
+    }
+
+    public void Bounce()
+    {
+        velocity.y = bounceForce;
     }
 }

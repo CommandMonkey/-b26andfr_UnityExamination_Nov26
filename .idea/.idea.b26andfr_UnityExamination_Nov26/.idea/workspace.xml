@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c85c80ff-178c-4fbb-862b-af185953463c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.b26andfr_UnityExamination_Nov26/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.b26andfr_UnityExamination_Nov26/.idea/workspace.xml" afterDir="false" />
@@ -13,6 +16,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnityEventOnTrigger1.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2,
@@ -30,6 +36,10 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -80,7 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1795160824912</updated>
       <workItem from="1795160826502" duration="2000" />
-      <workItem from="1795164493478" duration="290000" />
+      <workItem from="1795164493478" duration="1963000" />
     </task>
     <servers />
   </component>
