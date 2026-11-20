@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 // This component can be used together with the UnityEventOnTrigger-component to make a character in your game have health
 // If you don't know how to use UnityEvents, watch this video first: https://play.his.se/media/UnityEvents/0_nq9m8qin
@@ -15,6 +16,7 @@ public class Health : MonoBehaviour
     [SerializeField] float maxHealth = 10f;
     [Tooltip("Minimum amount of health")]
     [SerializeField] float minHealth = 0f;
+    [SerializeField] Slider healthBar;
 
     [Tooltip("Will not take damage when invincible")]
     [SerializeField] bool invincible;
@@ -86,6 +88,8 @@ public class Health : MonoBehaviour
             //apply damage, adjust if health ends up outside of allowed range
             currentHealth -= damage;
             currentHealth = Mathf.Clamp(currentHealth, minHealth, maxHealth); 
+            if (healthBar != null)
+                healthBar.value = currentHealth / maxHealth;
         
             Debug.Log(currentHealth);
             // call OnDamage action
